@@ -2,7 +2,7 @@
 
 End-to-end ESG (Environmental, Social, Governance) analytics on a Kaggle dataset of 866 sustainability reports from 263 S&P 500 companies (2014-2023). The dataset comes pre-scored (text, entities and E/S/G scores are given); this project builds the analytics and machine-learning layer on top of it — cleaning, validation, feature engineering, EDA, a company risk-index, and a leakage-safe next-year score forecaster.
 
-Status: Steps 1-6 complete. Steps 7 (GenAI copilot) and 8 (Streamlit dashboard) are planned.
+Status: Steps 1-6 complete.
 
 A full methodology write-up is in [REPORT.md](REPORT.md).
 
@@ -11,7 +11,6 @@ A full methodology write-up is in [REPORT.md](REPORT.md).
 ```
 ESG_Methodology_Steps_1-6.ipynb   main notebook, Steps 1-6 (runs top-to-bottom)
 REPORT.md                         methodology report (Steps 1-6)
-ESG_Report_Steps_1-6.pdf          report as PDF
 figures/                          EDA charts
 outputs/models/esg_model.pkl      trained forecasting model
 requirements.txt                  Python dependencies

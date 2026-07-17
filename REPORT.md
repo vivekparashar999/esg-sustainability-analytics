@@ -9,7 +9,7 @@
 
 ## 1. Objective
 
-Companies publish 100+ page sustainability reports every year, which are impossible to compare manually. The goal of this project is to turn a pre-scored ESG text dataset into **decision-useful intelligence** — cleaned and validated data, engineered signals, exploratory insights, a company risk-ranking, and a leakage-safe model that forecasts next-year ESG performance. Steps 7–8 (a GenAI copilot and a Streamlit dashboard) are planned next and are not part of this update.
+Companies publish 100+ page sustainability reports every year, which are impossible to compare manually. The goal of this project is to turn a pre-scored ESG text dataset into **decision-useful intelligence** — cleaned and validated data, engineered signals, exploratory insights, a company risk-ranking, and a leakage-safe model that forecasts next-year ESG performance.
 
 ---
 
@@ -75,12 +75,5 @@ Both models beat the naive baseline; Linear Regression wins (simplest model gene
 
 ## 4. Data-Integrity Note
 The most important finding of this update is in Step 2: a widely-assumed exact identity (`total = e+s+g`) turned out to be only *approximately* true in the raw data. Rather than hand-wave the gap as "rounding", it is characterised honestly (~22% of rows deviate beyond rounding, up to 2.77) and handled with tolerance-based comparison and outlier flagging. This discipline — verifying assumptions instead of trusting them — underpins the reliability of every later step.
-
-## 5. Next Steps
-- **Step 7 — GenAI Copilot (RAG):** natural-language Q&A grounded on the ESG data.
-- **Step 8 — Streamlit Dashboard:** interactive scores, trends, risk-ranking and the copilot in one app.
-- Optional model upgrades: TF-IDF/FinBERT-based scoring, cross-validation, and sensitivity analysis on the risk weights.
-
----
 
 *Reproducibility: all results above are produced end-to-end by `ESG_Methodology_Steps_1-6.ipynb` (runs top-to-bottom with zero errors on the Kaggle dataset).*
