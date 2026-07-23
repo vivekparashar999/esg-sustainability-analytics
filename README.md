@@ -41,3 +41,16 @@ The large CSVs (`preprocessed_content.csv`, `esg_features.csv`, `esg_risk.csv`, 
 - Assumptions are verified, not assumed: the `total = e+s+g` relationship is only approximately true (about 22% of rows differ by more than rounding), so it is handled with a tolerance check and outlier flagging.
 
 Tools: Python, pandas, NumPy, scikit-learn, matplotlib, seaborn.
+
+
+## 👨‍💻 Authors
+
+This project was collaboratively developed by:
+
+### **Vivek Parashar**
+- GitHub: https://github.com/vivekparashar999/esg-sustainability-analytics
+
+### **Sumit Kumar Singh**
+- GitHub: https://github.com/suumitdtu
+
+We welcome feedback, suggestions, and contributions. Feel free to connect with us through our GitHub profiles.
